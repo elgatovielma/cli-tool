@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+    mymongodb:
+        image: mongo:4.0
+        networks:
+            my_network:
+                aliases:
+                    - mymongodb
+    app:
+        #container_name: todoapp
+        #build: .
+        image: vielmagalberto/todo-app
+        ports:
+            - "8080:8080"
+        depends_on: 
+            - mymongodb
+        networks:
+            my_network:
+
+networks:
+    my_network:

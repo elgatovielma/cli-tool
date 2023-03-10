@@ -40,7 +40,7 @@ def get(ctx, format):
     else:
         if format == "json":
             click.echo(json.dumps(data, indent=4, sort_keys=True))
-        elif format == "text":
+        elif format == "txt":
             click.echo(data)
         elif format == "table":
             # PrettyTable allows us to print the info in a nice tabular way
