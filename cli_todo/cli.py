@@ -21,7 +21,7 @@ def cli(ctx):
      
 
 @cli.command(
-    help="Execute get command. Argument: --format "
+    help="Execute get command Argument: --format "
 )
 @click.pass_context
 @click.option(
@@ -54,7 +54,7 @@ def get(ctx, format):
             
             
 @cli.command(
-    help="Execute insert command. Argument: --text "
+    help="Execute insert command Argument: --text "
 )
 @click.pass_context
 @click.option(
@@ -77,7 +77,7 @@ def insert(ctx, text):
         
         
 @cli.command(
-    help="Execute delete command. Argument: --id "
+    help="Execute delete command Argument: --id "
 )
 @click.pass_context
 @click.option(

@@ -7,9 +7,9 @@ import lorem
     
 def create_random_todos():
     """
-        create random number of todos between 1 and 100
+        create random number of todos between 10 and 100
     """
-    random_number = random.randint(1, 100)
+    random_number = random.randint(10, 100)
     for i in range(random_number):
         todo = lorem.sentence()
         data = http_handler("POST", text=todo)
