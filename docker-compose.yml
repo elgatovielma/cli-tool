@@ -9,6 +9,8 @@ services:
     app:
         #container_name: todoapp
         #build: .
+        # I built an image and stored it in my docker registry
+        # https://hub.docker.com/r/vielmagalberto/todo-app
         image: vielmagalberto/todo-app
         ports:
             - "8080:8080"
