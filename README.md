@@ -59,3 +59,5 @@ todo workflow
 
 ### Enjoy the todos!
 
+P.S: The dockerfile is to show how I built the docker image to containerize the [todo app](https://github.com/scotch-io/node-todo)
+
